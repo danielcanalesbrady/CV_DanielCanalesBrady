@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/portafolio.png">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nick</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MÍ</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img class="imagen-perfil" src="./img/daniel.jpg" alt="">
+            </div>
+            <h1>DANIEL CANALES</h1>
+            <h2>Ingeniero en Informática</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/daniel.canalesbrady/?.."><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/lxl_TINTO_lxl"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://www.linkedin.com/in/daniel-canales-brady"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mí</h2>
+            <p><span>Hola, soy Daniel Canales.</span> Soy estudiante 
+                de ingeniería en informática apasionado por la programación 
+                y laresolución de problemas informáticos. A lo largo de mi 
+                carrera académica, hedesarrollado una sólida base de 
+                conocimientos en diversas áreas de la informáticay he trabajado 
+                en proyectos académicos que han mejorado mis habilidadestécnicas 
+                y mi capacidad para colaborar en equipos multidisciplinarios.
+                Anhelo poder aplicar mis habilidades en un entorno profesional, 
+                donde puedatrabajar en equipo, aprender de expertos y enfrentarme 
+                a problemas reales querequieran soluciones innovadoras. Soy consiente 
+                de que el mundo de la informáticaes dinámico y en constante evolución, 
+                y estoy dispuesto a comprometerme conaprendizaje continuo.</p>
+
+            <div class="fila">
+                <!--Datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            12/10/1988
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            978566823
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            canalesbrady@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.ejemplo.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            #181 Proyectada, Villa Alemana 
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>OPENTOWORK</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>LINUX</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>PELICULAS</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML &CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Profesional Skills -->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Eduación Media</h4>
+                        <span class="casa">Alexander Fleming</span>
+                        <span class="fecha">Generacion 2006</span>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Saepe voluptatibus magnam, 
+                        deserunt rerum ullam temporibus rem dolor 
+                        quidem vero facilis, perferendis cum 
+                        reprehenderit velit alias obcaecati? Vitae 
+                        praesentium assumenda commodi?
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ing. en Informatica</h4>
+                        <span class="casa">DuocUc</span>
+                        <span class="fecha">2001- 2004</span>
+                        <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Saepe voluptatibus magnam, 
+                        deserunt rerum ullam temporibus rem dolor 
+                        quidem vero facilis, perferendis cum 
+                        reprehenderit velit alias obcaecati? Vitae 
+                        praesentium assumenda commodi?
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de Trabajo</h3>
+                    <div class="item der">
+                        <h4>Jefe de Perecibles</h4>
+                        <span class="casa">Unimarc</span>
+                        <span class="fecha">2008 - 2013</span>
+                        <p>Manejo y gestión de productos perecibles, 
+                            liderar equipos eficientes,garantizar la 
+                            satisfacción del cliente y cumplir con los 
+                            mas altos estándares.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Auxiliar de Farmacia</h4>
+                        <span class="casa">Salcobrand</span>
+                        <span class="fecha">2013- PRESENTE</span>
+                        <p>Auxiliar de farmacia altamente motivado y 
+                            comprometido con mas de 10 añosde experiencia 
+                            en el campo de la salud y el cuidado de pacientes. 
+                            Mi enfoqueprincipal a sido brindar un servicio 
+                            excepcional y apoyo en la dispensación yadministración 
+                            de medicamentos, asegurando la seguridad y el bienestar 
+                            delos clientes. Poseo un solido conocimiento en medicamentos 
+                            y un historialcomprobado en al atención al cliente y gestión 
+                            de inventarios.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/img4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/img5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/img6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Dise;o Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Teléfono">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mapa.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Villa Alemana
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                (+56)9-78566823
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                canalesbrady@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <!-- footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
